@@ -1,0 +1,4 @@
+table.skiing td, table.skiing th {
+    border: grey thin solid;
+    padding: 4px;
+}
