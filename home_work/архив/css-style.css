@@ -1,0 +1,35 @@
+html {
+    font-family: inherit;
+  }
+
+table {
+    border-collapse: collapse;
+    border: 20px solid rgb(143, 82, 82);
+    letter-spacing: 2px;
+    font-size: large;
+  }
+  
+  td, th {
+    border: 5px solid rgb(207, 164, 20);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: rgb(235,235,235);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color:gainsboro;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color:burlywood;
+  }
+  
+  caption {
+    padding: 10px;
+  }      

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Заказ еды на вынос</title>
+        <link href="../styles/2.1.css"
+        rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>суши-бар
+                <em>&laquo;Йокогама&raquo;</em></h1>
+        </header>
+        <main>
+            
+            <h2>Заказ еды на вынос</h2>
+            <form action="mailto:order@yokogama.ru"
+            metod="post" enctype="text/plain">
+            <p>
+                <label for="dishes">что желаете заказать</label><br>
+                <select name="dishes" id="dishes" size="6" multiple>
+                    <optgroup label="Сашими">
+                    <option value="unagi">Унаги</option>
+                    <option value="hamachi">Хамачи</option>
+                    </optgroup>
+                    <optgroup label="Суши">
+                    <option value="chukka">Чука</option>
+                    <option value="maguro">Магуро</option>
+                    <option value="tobiko">Тобико</option>
+                    </optgroup>
+                    <optgroup label="Роллы">
+                        <option value="furicame">Фурикаме</option>
+                        <option value="vabi sabi">Ваби саби</option>
+                        <option value="okinava">Окинава</option>
+                    </optgroup>
+                </select>
+
+            </p>
+            <p>
+                <label for="phone">по какому телефону вам перезвонить?</label><br>
+                <input type="text" name="phone" id="phone" required>
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+
+        </form>
+
+        <p>введите текст сообщения<br>
+        <textarea cols="50" rows="10" wrap="hard">Здравствуйте</textarea>
+        </p>
+        <p>уровень удовлетворенности (от до 10)<br> <input type="range" min="1" max="10" value="5"></p>
+
+        <p>
+            <fieldset>
+                <legend>укажите сведения о вас и вашей компании</legend>
+            <label for="guests">гости</label><br>
+            <input type="radio" name="guests" id="guests" value="1">1
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="guests" value="2">2
+            &nbsp;&nbsp;&nbsp;
+            <input type='radio' name="guests" value="3">3 и более
+            </fieldset>
+        </p>
+            <p>
+               <input type="checkbox" name="children" value="*">среди клиентов будут дети
+            </p>
+            </fieldset>
+        <p class="bolded">полужирный шрифт</p>
+
+    
+        </main>
+        <footer>
+            <p>&copy; читатели книги &laquo;HTML и CSS&raquo;<br>Все права защищены</p>
+        </footer>
+    </body>
+
+</html>

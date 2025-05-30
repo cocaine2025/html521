@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Заказ столиков</title>
+        <link href="../styles/2.1.css"
+        rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>суши-бар
+                <em>&laquo;Йокогама&raquo;</em></h1>
+        </header>
+        <main>
+            
+            <h2>Заказ столиков</h2>
+            <form action="mailto:order@yokogama.ru"
+            metod="post" enctype="text/plain">
+            <p>
+                <label for="name">Как к вам обращаться?</label><br>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="phone">по какому телефону вам перезвонить?</label><br>
+                <input type="text" name="phone" id="phone" required>
+            </p>
+            <p>
+                <label for="time">на какое время желаете заказать столик?</label><br>
+                <input type="time" name="time" id="time" required>
+            </p>
+            <p>
+                <label for="cnt">на сколько человек заказывается столик?</label><br>
+                <input type="radio" name="cnt" id="cnt" value="1">1
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="cnt" value="2">2
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="cnt" value="more">3 и более
+            </p>
+            <p>
+                <input type="checkbox" name="children" value="*">среди клиентов будут дети
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+
+        </form>
+        </main>
+        <footer>
+            <p>&copy; читатели книги &laquo;HTML и CSS&raquo;<br>Все права защищены</p>
+        </footer>
+    </body>
+
+</html>
